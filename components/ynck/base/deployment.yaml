@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: ynck
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-iwwr-tenant/byoc-app-jqwh/ynck@sha256:123e11737e259cf2d0303e6dd3fd8af29f53b11379acb8a7e2398dd229bdfaa5
         name: my-java-quarkus
         ports:
         - containerPort: 8081
