@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: ynck
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: ynck
+    app.kubernetes.io/part-of: byoc-app-jqwh
+  name: ynck
+spec:
+  rules:
+  - host: ynck-byoc-iwwr-tenant.apps.9dc1a85880cc8015ac60.hypershift.aws-2.ci.openshift.org
+    http:
+      paths:
+      - backend:
+          service:
+            name: ynck
+            port:
+              number: 8081
+        path: /
+        pathType: ImplementationSpecific
+status:
+  loadBalancer: {}
